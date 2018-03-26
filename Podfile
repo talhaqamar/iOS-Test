@@ -6,5 +6,6 @@ target 'iOS Test' do
   use_frameworks!
 
   # Pods for iOS Test
+	pod 'JASON', '~> 3.0'
 
 end
