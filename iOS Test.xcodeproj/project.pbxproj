@@ -12,6 +12,7 @@
 		DEA8CBC12069B8A7007AF5ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA8CBBF2069B8A7007AF5ED /* Main.storyboard */; };
 		DEA8CBC32069B8A7007AF5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA8CBC22069B8A7007AF5ED /* Assets.xcassets */; };
 		DEA8CBC62069B8A7007AF5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA8CBC42069B8A7007AF5ED /* LaunchScreen.storyboard */; };
+		DEA8CBD22069CF0C007AF5ED /* Rows.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8CBD12069CF0C007AF5ED /* Rows.swift */; };
 		EC0B991412AD4E084678582C /* Pods_iOS_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B126677506519DCA1905B67F /* Pods_iOS_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		DEA8CBC22069B8A7007AF5ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA8CBC52069B8A7007AF5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEA8CBC72069B8A7007AF5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA8CBD12069CF0C007AF5ED /* Rows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rows.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		DEA8CBBA2069B8A7007AF5ED /* iOS Test */ = {
 			isa = PBXGroup;
 			children = (
+				DEA8CBCD2069CD69007AF5ED /* Model */,
 				DEA8CBBB2069B8A7007AF5ED /* AppDelegate.swift */,
 				DEA8CBBD2069B8A7007AF5ED /* ViewController.swift */,
 				DEA8CBBF2069B8A7007AF5ED /* Main.storyboard */,
@@ -78,6 +81,14 @@
 				DEA8CBC72069B8A7007AF5ED /* Info.plist */,
 			);
 			path = "iOS Test";
+			sourceTree = "<group>";
+		};
+		DEA8CBCD2069CD69007AF5ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEA8CBD12069CF0C007AF5ED /* Rows.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E7CD7FCF54ADB1200A94379C /* Frameworks */ = {
@@ -183,9 +194,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS Test/Pods-iOS Test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JASON/JASON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JASON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -214,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA8CBD22069CF0C007AF5ED /* Rows.swift in Sources */,
 				DEA8CBBE2069B8A7007AF5ED /* ViewController.swift in Sources */,
 				DEA8CBBC2069B8A7007AF5ED /* AppDelegate.swift in Sources */,
 			);
